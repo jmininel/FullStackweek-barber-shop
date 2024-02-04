@@ -1,9 +1,10 @@
+/** @format */
 
- const { PrismaClient } = require("@prisma/client");
+const { PrismaClient } = require("@prisma/client");
 
 const prisma = new PrismaClient();
 
-async function seedDatabase(): Promise<void> {
+async function seedDatabase() {
   try {
     const images = [
       "https://utfs.io/f/c97a2dc9-cf62-468b-a851-bfd2bdde775f-16p.png",
@@ -96,7 +97,8 @@ async function seedDatabase(): Promise<void> {
         name: "Hidratação",
         description: "Hidratação profunda para cabelo e barba.",
         price: 25.0,
-        imageUrl: "Fios hidratados, macios e brilhantes.",
+        imageUrl:
+          "https://utfs.io/f/8a457cda-f768-411d-a737-cdb23ca6b9b5-b3pegf.png",
       },
     ];
 
@@ -141,7 +143,4 @@ async function seedDatabase(): Promise<void> {
   }
 }
 
-seedDatabase()
-
-
-
+seedDatabase();
