@@ -126,6 +126,7 @@ async function seedDatabase(): Promise<void> {
                 id: barbershop.id,
               },
             },
+            imageUrl: service.imageUrl,
           },
         });
       }
